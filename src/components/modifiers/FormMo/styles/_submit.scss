@@ -1,0 +1,10 @@
+.submit-primary {
+  background-color: var(--green-jungle);
+  color: var(--white);
+  &:hover {
+    background-color: var(--green-crayola);
+  }
+  &:active {
+    opacity: 30%;
+  }
+}

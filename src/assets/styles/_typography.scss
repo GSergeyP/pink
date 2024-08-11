@@ -1,0 +1,98 @@
+@mixin font($font-family, $font-size, $line-height) {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+.nav-d {
+  @include font(OpenSans-Regular, 18px, 18px);
+}
+.nav-t {
+  @include font(OpenSans-Bold, 18px, 32px);
+}
+.nav-m {
+  @include font(OpenSans-Bold, 18px, 32px);
+}
+.h1-d {
+  @include font(OpenSans-Light, 50px, 68.09px);
+}
+.h1-t {
+  @include font(OpenSans-Light, 40px, 48px);
+}
+.h1-m {
+  @include font(OpenSans-Light, 24px, 28.8px);
+}
+.h3-d {
+  @include font(OpenSans-Bold, 30px, 30px);
+}
+.h3-t {
+  @include font(OpenSans-Bold, 18px, 24px);
+}
+.h3-m {
+  @include font(OpenSans-Bold, 18px, 24px);
+}
+.h4-d {
+  @include font(OpenSans-Light, 18px, 24px);
+}
+.h4-t {
+  @include font(OpenSans-Light, 18px, 24px);
+}
+.h4-m {
+  @include font(OpenSans-Light, 14px, 24px);
+}
+.h5-d {
+  @include font(OpenSans-Regular, 18px, 18px);
+}
+.h5-t {
+  @include font(OpenSans-Regular, 14px, 18px);
+}
+.h5-m {
+  @include font(OpenSans-Regular, 14px, 18px);
+}
+.h6-d,
+.input-primary,
+.textarea-primary {
+  @include font(OpenSans-Regular, 18px, 30px);
+}
+.h6-t {
+  @include font(OpenSans-Regular, 18px, 30px);
+}
+.h6-m {
+  @include font(OpenSans-Regular, 14px, 30px);
+}
+.p-d {
+  @include font(OpenSans-Regular, 18px, 30px);
+}
+.p-t {
+  @include font(OpenSans-Regular, 14px, 24px);
+}
+.p-m {
+  @include font(OpenSans-Regular, 14px, 24px);
+}
+.button-d {
+  @include font(OpenSans-Bold, 21px, 18px);
+}
+.button-t {
+  @include font(OpenSans-Bold, 18px, 18px);
+}
+.button-m {
+  @include font(OpenSans-Bold, 18px, 18px);
+}
+.label-d {
+  @include font(OpenSans-Regular, 14px, 30px);
+}
+.label-t {
+  @include font(OpenSans-Regular, 14px, 30px);
+}
+.label-m {
+  @include font(OpenSans-Regular, 18px, 30px);
+}
+.submit-d {
+  @include font(OpenSans-Bold, 18px, 30px);
+}
+.submit-t {
+  @include font(OpenSans-Bold, 18px, 30px);
+}
+.submit-m {
+  @include font(OpenSans-Bold, 18px, 30px);
+}

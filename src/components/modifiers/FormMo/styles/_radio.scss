@@ -1,0 +1,94 @@
+/* Настройка этикетки (контейнера)*/
+.container-radio-primary {
+  display: block;
+  position: relative;
+  margin-bottom: 46px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+[device='d'] {
+  .container-radio-primary {
+    padding-left: 133px;
+  }
+}
+[device='t'] {
+  .container-radio-primary {
+    padding-left: 120px;
+  }
+}
+[device='m'] {
+  .container-radio-primary {
+    padding-left: 90px;
+  }
+}
+
+/* Скрыть переключатель браузера по умолчанию */
+.container-radio-primary .radio-primary {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+/* Создайте пользовательский переключатель */
+.span-radio-primary {
+  position: absolute;
+  top: 0;
+  height: 37px;
+  width: 37px;
+  border: 1px solid var(--platinum);
+  border-radius: 50%;
+}
+[device='d'] {
+  .span-radio-primary {
+    left: 75px;
+  }
+}
+[device='t'] {
+  .span-radio-primary {
+    left: 55px;
+  }
+}
+[device='m'] {
+  .span-radio-primary {
+    background-color: var(--white);
+    left: 22px;
+  }
+}
+
+/* При наведении курсора мыши добавьте фона */
+.container-radio-primary:hover .radio-primary ~ .span-radio-primary {
+  border-color: var(--granite);
+}
+
+/* Когда переключатель установлен, добавьте фон */
+.container-radio-primary .radio-primary:checked ~ .span-radio-primary {
+  border-color: var(--purple-red);
+}
+
+/* Создайте индикатор (точка/кружок - скрыт, если флажок не установлен). */
+.span-radio-primary:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+/* Показывать индикатор (точка/кружок), когда он установлен */
+.container-radio-primary .radio-primary:checked ~ .span-radio-primary:after {
+  display: block;
+}
+
+/* Стилизуйте индикатор (точка/круг) */
+.container-radio-primary .span-radio-primary:after {
+  top: 10px;
+  left: 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--purple-red);
+  z-index: 1;
+}

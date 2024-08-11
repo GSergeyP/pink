@@ -1,0 +1,35 @@
+.block {
+  background-image: url('/img/bg/bg.phone.png'), url('/img/bg/bg.screen.png');
+  background-repeat: no-repeat, no-repeat;
+}
+
+[device='d'] {
+  .block {
+    background-size:
+      88% auto,
+      20% auto;
+    background-position:
+      98% 100%,
+      74% 61%;
+  }
+}
+[device='t'] {
+  .block {
+    background-size:
+      135% auto,
+      204.6px auto;
+    background-position:
+      -112px 5%,
+      363px 28%;
+  }
+}
+[device='m'] {
+  .block {
+    background-size:
+      160% auto,
+      111px auto;
+    background-position:
+      -174px 0,
+      105px 35%;
+  }
+}

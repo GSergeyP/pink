@@ -1,0 +1,27 @@
+.textarea-primary {
+  text-indent: 5%;
+  border: 2px solid var(--platinum);
+  border-radius: 1px;
+  outline: none;
+  &:hover {
+    border-color: var(--granite);
+  }
+  &:active {
+    border-color: var(--purple-red);
+  }
+}
+[device='d'] {
+  .textarea-primary {
+    text-indent: 5%;
+  }
+}
+[device='t'] {
+  .textarea-primary {
+    text-indent: 3.5%;
+  }
+}
+[device='m'] {
+  .textarea-primary {
+    text-indent: 6%;
+  }
+}
